@@ -16,8 +16,10 @@ Syphon     ..... http://syphon.v002.info/
 Minim      ..... http://code.compartmental.net/tools/minim/
 
 
-
-	*Para instalar Syphon desde el menú de processing 2.2.1 ir a Sketch > Import Library > Add Library y se introduce la palabra Syphon en el buscador.
+	*
+	Para instalar Syphon desde el menú de processing 2.2.1 ir a 
+	Sketch > Import Library > Add Library 
+	y se introduce la palabra Syphon en el buscador.
 
 
 
@@ -39,4 +41,8 @@ Processing sketch integrated with Syphon and Minim for real time generative art 
 
 
 
+![alt tag](img/01.png)
+![alt tag](img/02.png)
+![alt tag](img/03.png)
+![alt tag](img/04.png)
 
