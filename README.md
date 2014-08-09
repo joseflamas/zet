@@ -1,14 +1,25 @@
-███████╗███████╗████████╗ \n
-╚══███╔╝██╔════╝╚══██╔══╝ \n
-  ███╔╝ █████╗     ██║    \n
- ███╔╝  ██╔══╝     ██║    \n
-███████╗███████╗   ██║    \n
-╚══════╝╚══════╝   ╚═╝    \n                       
 
+
+███████╗███████╗████████╗ 
+╚══███╔╝██╔════╝╚══██╔══╝
+  ███╔╝ █████╗     ██║   
+ ███╔╝  ██╔══╝     ██║   
+███████╗███████╗   ██║   
+╚══════╝╚══════╝   ╚═╝                           
+
+zet(v.0.0)
+==========
 BySrM
-=====
-
-https://www.processing.org/ sketch for VJs
+Processing/Syphon/Minim
 
 
-Sketch de processing integrado con http://syphon.v002.info/ y http://code.compartmental.net/tools/minim/
+
+Sketch de processing integrado con Syphon y Minim para mezcla de arte generativo en vivo. 
+Processing sketch integrated with Syphon and Minim for real time generative art mixing.
+
+
+Processing ..... https://www.processing.org/ 
+
+Syphon     ..... http://syphon.v002.info/
+
+Minim      ..... http://code.compartmental.net/tools/minim/
