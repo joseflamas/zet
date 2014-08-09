@@ -17,7 +17,7 @@ Minim      ..... http://code.compartmental.net/tools/minim/
 
 
 
-		* Para instalar Syphon desde el menú de processing 2.2.1 ir a Sketch > Import Library > Add Library y se introduce la palabra Syphon en el buscador.
+	*Para instalar Syphon desde el menú de processing 2.2.1 ir a Sketch > Import Library > Add Library y se introduce la palabra Syphon en el buscador.
 
 
 
