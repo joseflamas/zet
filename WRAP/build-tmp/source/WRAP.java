@@ -1,26 +1,46 @@
+import processing.core.*; 
+import processing.data.*; 
+import processing.event.*; 
+import processing.opengl.*; 
+
+import ddf.minim.*; 
+import ddf.minim.analysis.*; 
+import codeanticode.syphon.*; 
+
+import java.util.HashMap; 
+import java.util.ArrayList; 
+import java.io.File; 
+import java.io.BufferedReader; 
+import java.io.PrintWriter; 
+import java.io.InputStream; 
+import java.io.OutputStream; 
+import java.io.IOException; 
+
+public class WRAP extends PApplet {
+
 //////////////////////////////////////////////////////////////////////
 // 
 // WRAP 
 // Syphon/minim/fun000
 // 
 // SIMPLEWRAP
-// Esta es la versión más simple del proyecto al momento.
-// 		+ pantalla deformable en tiempo real (proporción inicial 4 a 1 y opción a pantalla completa)
+// Esta es la versi\u00f3n m\u00e1s simple del proyecto al momento.
+// 		+ pantalla deformable en tiempo real (proporci\u00f3n inicial 4 a 1 y opci\u00f3n a pantalla completa)
 // 		+ entrada de audio estereo (1024, 44100)
 // 		+ servidor de video para mezcla en otros programas (Resolume, Modul8, Quartz ...)
 // 
 //
 // V.00 
-// FeelGoodSoftwareporGuillermoGonzálezIrigoyen
+// FeelGoodSoftwareporGuillermoGonz\u00e1lezIrigoyen
 //
 //////////////////////////////////////////////////////////////////////
 
 
 //minim
-import ddf.minim.*;
-import ddf.minim.analysis.*;
+
+
 //syphon
-import codeanticode.syphon.*;
+
 // ... importa tus librerias
 
 
@@ -28,8 +48,8 @@ import codeanticode.syphon.*;
 
 
 
-//VARIABLES DE CONFIGURACIÓN
-//Tamaño de la pantalla , proporciones y tweak
+//VARIABLES DE CONFIGURACI\u00d3N
+//Tama\u00f1o de la pantalla , proporciones y tweak
 boolean pCompleta   = false;
 boolean pDeformable = true;
 int proporcionP     = 4;
@@ -44,7 +64,7 @@ int estereo = 1;
 int buffer  = 1024;
 int sampleR = 44100;
 int profBit = 8;
-// ... escribe tus variables aquí
+// ... escribe tus variables aqu\u00ed
 
 
 
@@ -54,7 +74,7 @@ int profBit = 8;
 //
 //##SETUP##
 //
-void setup()
+public void setup()
 {
 	//CANVAS
 	pP = (pCompleta == true)? 1 : proporcionP;
@@ -66,7 +86,7 @@ void setup()
 	//AUDIO
 	minim 	= new Minim(this);
 	in0 	= minim.getLineIn(estereo, buffer, sampleR, profBit);
-	// ... escribe tu setup aquí
+	// ... escribe tu setup aqu\u00ed
   
 
   
@@ -81,14 +101,14 @@ void setup()
 //
 //##DRAW##
 //
-void draw()
+public void draw()
 {
-  // Para usar minim genera un loop del tamaño del buffer (1024) y usalo en la entrada de audio.
+  // Para usar minim genera un loop del tama\u00f1o del buffer (1024) y usalo en la entrada de audio.
   background(0);
   for( int i = 0; i < buffer; i++ )
   {
   	stroke(255);
-  	if(i>buffer||i==buffer){ i = int(norm(i,0,buffer)); }
+  	if(i>buffer||i==buffer){ i = PApplet.parseInt(norm(i,0,buffer)); }
    	line( i, (height/2)+in0.mix.get(i)*50, i+1, (height/2)+in0.mix.get(i)*50);
   }
   // ... borra y haz halgo
@@ -112,7 +132,7 @@ void draw()
 //
 //##CONTROLES##
 //
-void keyPressed() 
+public void keyPressed() 
 {
   char k = key;
   switch(k)
@@ -141,4 +161,13 @@ void keyPressed()
 //
 //##OVERS##
 //
-boolean sketchFullScreen() { return pCompleta; }
+public boolean sketchFullScreen() { return pCompleta; }
+  static public void main(String[] passedArgs) {
+    String[] appletArgs = new String[] { "WRAP" };
+    if (passedArgs != null) {
+      PApplet.main(concat(appletArgs, passedArgs));
+    } else {
+      PApplet.main(appletArgs);
+    }
+  }
+}

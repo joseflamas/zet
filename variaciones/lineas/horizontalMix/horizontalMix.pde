@@ -3,18 +3,12 @@
 // WRAP 
 // Syphon/minim/fun000
 // 
-// SIMPLEWRAP
-// Esta es la versión más simple del proyecto al momento.
-// 		+ pantalla deformable en tiempo real (proporción inicial 4 a 1 y opción a pantalla completa)
-// 		+ entrada de audio estereo (1024, 44100)
-// 		+ servidor de video para mezcla en otros programas (Resolume, Modul8, Quartz ...)
-// 
+// HORIZONTALMIX
 //
 // V.00 
 // FeelGoodSoftwareporGuillermoGonzálezIrigoyen
 //
 //////////////////////////////////////////////////////////////////////
-
 
 //minim
 import ddf.minim.*;

@@ -2,11 +2,7 @@
 zet
 ===
 
-_BySrM
-
-_Processing/Syphon/Minim
-
-
+:: BySrM ::: Processing/Syphon/Minim ::
 
 
 Processing ..... https://www.processing.org/
@@ -27,15 +23,15 @@ Minim      ..... http://code.compartmental.net/tools/minim/
 V.00
 
 Sketch de processing integrado con Syphon y Minim para mezcla de arte generativo en vivo. 
-Processing sketch integrated with Syphon and Minim for real time generative art mixing.
 
 
 		Instrucciones de uso.
-			Copia el WRAP o alguna variación de tu preferencia y renombra la carpeta junto con el archivo .pde al de tu elección.
+			Copia el WRAP o alguna variación de tu preferencia y renombra la carpeta 
+			junto con el archivo .pde al de tu elección.
 
 
 		Caracteristicas.
- 			+ pantalla deformable en tiempo real (proporción inicial 4 a 1 y opción a pantalla completa)
+ 			+ pantalla deformable en tiempo real (proporción inicial 4 a 1 )
  			+ entrada de audio estereo (1024, 44100) para manipulación de objetos
  			+ servidor de video para mezcla en otros programas (Resolume, Modul8, Quartz ...)
 
