@@ -25,14 +25,14 @@ import toxi.geom.mesh.*;
 
 
 //VARIABLES DE CONFIGURACIÓN
-//Tamaño de la pantalla , proporciones y tweak
+//Tamaño de la pantalla , proporciones y tweak 
 boolean pCompleta   = false;
 boolean pDeformable = true;
 int proporcionP     = 4;
 int pP,pW,pH;
 //Syphon
 SyphonServer server;
-String nombreServer = "SIMPLEWRAP";
+String nombreServer = "BASS";
 //Audio
 Minim minim;
 AudioInput in0;
@@ -91,7 +91,7 @@ void draw()
 {
 
   
-  background(0);
+  //background(0);
   translate(width / 2, height / 2, 0);
   rotateX(cos(millis()) * 0.01f);
   rotateY(sin(millis()) * 0.01f);
@@ -132,7 +132,7 @@ void draw()
 
   
 
-
+ drawMesh(g, mesh, !isWireFrame, showNormals);
 
 
 
